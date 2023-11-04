@@ -34,6 +34,10 @@ nav ul{
     position: relative;
 }
 
+.container{
+    border-collapse: collapse;
+}
+
 .box{
     border: 5px solid #ef8435;
     background-color: black;
@@ -85,8 +89,6 @@ nav ul{
         font-size: 1.5rem;
     }
     .container { 
-        border-top: 10px;
-        border-bottom: 50px;
         grid-template-rows: repeat(3, 20vw);
         grid-template-columns: repeat(3, 20vw);
     }

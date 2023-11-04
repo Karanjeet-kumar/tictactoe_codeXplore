@@ -1,8 +1,6 @@
-console.log("Welcome to Tic Tac Toe")
 let turn = "X"
 let num="1"
 let isgameover = false;
-var a=0;
 
 const changeTurn = ()=>{
     return turn === "X"? "O": "X"
@@ -27,6 +25,7 @@ const checkWin = ()=>{
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "") ){
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
             isgameover = true
+            document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px";
         }
     })
 }
@@ -43,7 +42,7 @@ Array.from(boxes).forEach(element =>{
             
             checkWin();
             if(!isgameover){
-                if(moves==9)
+                if(moves===9)
                 document.getElementsByClassName("info")[0].innerText  = "Draw";
                 else
                 document.getElementsByClassName("info")[0].innerText  = "Player "+num + "'s Turn (" + turn +")";
@@ -51,9 +50,7 @@ Array.from(boxes).forEach(element =>{
             }
                
         }
-        // else{
-        //     document.getElementsByClassName("info")[0].innerText = "Draw!";
-        // }
+        
     })
 })
 
@@ -66,5 +63,6 @@ reset.addEventListener('click', ()=>{
     num="1"; 
     isgameover = false
     document.getElementsByClassName("info")[0].innerText  = "Player "+num + "'s Turn (" + turn +")";
+    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 })
 
