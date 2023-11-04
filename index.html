@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li>Tic Tac Toe Game</li>
-        </ul>
+      <ul>
+        <li>TIC-TAC-TOE</li>
+      </ul>
     </nav>
+
     <div class="gameContainer">
-        <div class="container">
-            <div class="box"><span class="boxText"></span></div>
-            <div class="box"><span class="boxText"></span></div>
-            <div class="box"><span class="boxText"></span></div>
-            <div class="box"><span class="boxText"></span></div>
-            <div class="box"><span class="boxText"></span></div>
-            <div class="box"><span class="boxText"></span></div>
-            <div class="box"><span class="boxText"></span></div>
-            <div class="box"><span class="boxText"></span></div>
-            <div class="box"><span class="boxText"></span></div>
-        </div>
         <div class="gameInfo">
             <h1>Welcome To The Game</h1>
             <div>
-                <span class="info">Turn for X</span>
+                <span class="info">Player 1's Turn (X)</span>
                 <button id="reset">Reset</button>
-              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0"><span class="boxtext"></span></div>
         </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
