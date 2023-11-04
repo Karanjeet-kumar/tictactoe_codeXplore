@@ -1,5 +1,3 @@
 # tictactoe_codeXplore
-Hii i am updated
-okay
-gaygetgitg
-gi
+The classic TIC-TAC-TOE game built using **html** **css** **
+**JavaScript**
