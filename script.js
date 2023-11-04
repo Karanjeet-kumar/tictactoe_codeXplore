@@ -1,6 +1,7 @@
 let turn = "X"
 let num="1"
 let isgameover = false;
+let  moves=0
 
 const changeTurn = ()=>{
     return turn === "X"? "O": "X"
@@ -29,7 +30,7 @@ const checkWin = ()=>{
         }
     })
 }
-let  moves=0
+
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
     let boxtext = element.querySelector('.boxtext');
@@ -42,7 +43,7 @@ Array.from(boxes).forEach(element =>{
             
             checkWin();
             if(!isgameover){
-                if(moves===9)
+                if(moves>=9)
                 document.getElementsByClassName("info")[0].innerText  = "Draw";
                 else
                 document.getElementsByClassName("info")[0].innerText  = "Player "+num + "'s Turn (" + turn +")";
@@ -61,6 +62,7 @@ reset.addEventListener('click', ()=>{
     });
     turn = "X";
     num="1"; 
+    moves=0;
     isgameover = false
     document.getElementsByClassName("info")[0].innerText  = "Player "+num + "'s Turn (" + turn +")";
     document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
