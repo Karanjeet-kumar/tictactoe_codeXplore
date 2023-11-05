@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link id="theme" rel="stylesheet" href="light.css" />
+    <script>
+      function toggleTheme() {  
+            var theme = document.getElementsByTagName('link')[0]; 
+
+            if (theme.getAttribute('href') == 'light.css') { 
+                theme.setAttribute('href', 'dark.css'); 
+            } else { 
+                theme.setAttribute('href', 'light.css'); 
+            } 
+        } 
+    </script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>TIC-TAC-TOE</li>
-      </ul>
-    </nav>
+  <div class="nav">
+    <div class = "first card">TIC-TAC-TOE</div>
+    <div class = "second card"><button onclick="toggleTheme()">Switch</button> </div>
+  </div>
 
     <div class="gameContainer">
         <div class="gameInfo">

@@ -1,3 +1,5 @@
+var theme = document.getElementsByTagName('link')[0]; 
+
 let turn = "X"
 let num="1"
 let isgameover = false;
