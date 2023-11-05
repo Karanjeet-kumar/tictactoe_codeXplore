@@ -40,7 +40,7 @@ Array.from(boxes).forEach(element =>{
         if(boxtext.innerText === ''){
             boxtext.innerText = turn;
             turn = changeTurn();
-            num = changeNum();
+            num = changeNum(); 
             moves+=1;
             
             checkWin();
