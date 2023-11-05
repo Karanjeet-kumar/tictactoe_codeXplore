@@ -26,7 +26,7 @@ const checkWin = ()=>{
     ]
     wins.forEach(e =>{
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "") ){
-            document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won !!"
+            document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Wins!!"
             isgameover = true
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px";
         }
@@ -46,7 +46,7 @@ Array.from(boxes).forEach(element =>{
             checkWin();
             if(!isgameover){
                 if(moves>=9)
-                document.getElementsByClassName("info")[0].innerText  = "Draw !";
+                document.getElementsByClassName("info")[0].innerText  = "Draw!";
                 else
                 document.getElementsByClassName("info")[0].innerText  = "Player "+num + "'s Turn (" + turn +")";
 
