@@ -23,8 +23,6 @@
     flex: 1;
 }
 
-
-
 .gameContainer{ 
     display: flex;
     gap: 100px;
@@ -38,10 +36,6 @@
     grid-template-columns: repeat(3, 10vw);
     font-family: 'Roboto', sans-serif;
     position: relative;
-}
-
-.container{
-    border-collapse: collapse;
 }
 
 .box{
@@ -72,6 +66,17 @@
 
 .gameInfo h1{
     font-size: 2.5rem;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.btn{
+    background-color: bisque;
+    height: 30px;
+    font-size: 25px;
 }
 
 #reset {

@@ -40,9 +40,6 @@
     position: relative;
 }
 
-.container{
-    border-collapse: collapse;
-}
 
 .box{
     border: 5px solid #ffaa6d;
@@ -73,6 +70,18 @@
 .gameInfo h1{
     font-size: 2.5rem;
 }
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.btn{
+    background-color: bisque;
+    height: 30px;
+    font-size: 25px;
+}
+
 
 #reset {
     margin: 0 23px;
