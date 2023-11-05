@@ -46,7 +46,7 @@ Array.from(boxes).forEach(element =>{
             checkWin();
             if(!isgameover){
                 if(moves>=9)
-                document.getElementsByClassName("info")[0].innerText  = "Draw";
+                document.getElementsByClassName("info")[0].innerText  = "Draw !";
                 else
                 document.getElementsByClassName("info")[0].innerText  = "Player "+num + "'s Turn (" + turn +")";
 
